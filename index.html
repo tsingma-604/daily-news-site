@@ -62,6 +62,47 @@
         </div>
     </main>
 
+    <!-- Article Detail Modal -->
+    <div id="articleModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <button id="modalCloseBtn" class="modal-close-btn" aria-label="關閉文章詳情">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <div class="modal-meta-item">
+                        <span class="modal-meta-label">類別:</span>
+                        <span id="modalCategory" class="modal-meta-value"></span>
+                    </div>
+                    <div class="modal-meta-item">
+                        <span class="modal-meta-label">來源:</span>
+                        <span id="modalSource" class="modal-meta-value"></span>
+                    </div>
+                    <div class="modal-meta-item">
+                        <span class="modal-meta-label">時間:</span>
+                        <span id="modalTime" class="modal-meta-value"></span>
+                    </div>
+                    <div class="modal-meta-item">
+                        <span class="modal-meta-label">可信度:</span>
+                        <span id="modalReliability" class="modal-meta-value"></span>
+                    </div>
+                </div>
+                <div class="modal-divider"></div>
+                <div class="modal-article-content">
+                    <p id="modalSummary" class="modal-summary"></p>
+                    <article id="modalArticle" class="modal-article"></article>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="modalReadMoreBtn" class="modal-read-more-btn">繼續閱讀原文</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>© 2026 今日新聞速覽 | 粵語新聞儀表板 | <a href="#" title="關於我們">關於</a> | <a href="#" title="隱私政策">隱私</a> | <a href="#" title="條款">條款</a></p>
