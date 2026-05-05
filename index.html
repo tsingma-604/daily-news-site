@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="今日新聞速覽 - 粵語新聞儀表板，實時掌握香港、國際、AI科技、經濟和社會資訊">
+    <meta name="keywords" content="新聞,香港,國際,AI科技,經濟,社會,儀表板">
+    <meta name="author" content="Daily News">
+    <meta name="theme-color" content="#2196F3">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="今日新聞速覽">
+    <meta property="og:description" content="粵語新聞儀表板，掌握最新新聞資訊">
+    <meta property="og:type" content="website">
+    
+    <title>今日新聞速覽 - 粵語新聞儀表板</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-weight='bold' fill='%232196F3'>📰</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <span class="header-logo-emoji">📰</span>
+                <span>今日新聞速覽</span>
+            </div>
+            <div class="search-container">
+                <input 
+                    type="search" 
+                    id="searchInput" 
+                    placeholder="搜尋新聞..." 
+                    aria-label="搜尋新聞標題、摘要或來源"
+                >
+            </div>
+            <div class="header-controls">
+                <button id="darkModeToggle" aria-label="切換深色模式" title="按 Ctrl+K 快速搜尋 (Cmd+K on Mac)">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Filter Section -->
+        <section class="filter-section" aria-label="新聞類別篩選">
+            <button class="filter-btn active" data-category="all">全部</button>
+            <button class="filter-btn" data-category="香港">香港</button>
+            <button class="filter-btn" data-category="國際">國際</button>
+            <button class="filter-btn" data-category="AI科技">AI科技</button>
+            <button class="filter-btn" data-category="經濟">經濟</button>
+            <button class="filter-btn" data-category="社會">社會</button>
+        </section>
+
+        <!-- News Grid -->
+        <div id="newsContainer" role="region" aria-label="新聞列表">
+            <!-- News cards will be inserted here by JavaScript -->
+        </div>
+
+        <!-- No Results Message -->
+        <div id="noResults" role="status" aria-live="polite">
+            <p>未找到匹配的新聞。請試試其他搜尋條件。</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 今日新聞速覽 | 粵語新聞儀表板 | <a href="#" title="關於我們">關於</a> | <a href="#" title="隱私政策">隱私</a> | <a href="#" title="條款">條款</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
